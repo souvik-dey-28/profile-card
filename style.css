@@ -4,9 +4,14 @@
         * {
             box-sizing: border-box;
         }
-
+        
         body {
-            background-color: #03BFCB;;
+             /* background-color: #03BFCB;  */
+             animation-name: backgroundColorPalette;
+             animation-duration: 10s;
+             animation-iteration-count: infinite;
+             animation-direction: alternate;
+           
             font-family: Montserrat, sans-serif;
 
             display: flex;
@@ -17,6 +22,28 @@
             min-height: 100vh;
             margin: 0;
         }
+        @keyframes backgroundColorPalette {
+            0% {
+              background: #ee6055;
+            }
+            20% {
+              background: #60d394;
+            }
+            40% {
+              background: #03BFCB;
+            }
+            60% {
+              background: #aaf683;
+            }
+            80% {
+              background: #ffd97d;
+            }
+            100% {
+              background: #ff9b85;
+            }
+        }          
+
+
 
         h3 {
             margin: 10px 0;
